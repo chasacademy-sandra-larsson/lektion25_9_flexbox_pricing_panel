@@ -1,0 +1,87 @@
+@import url("./base.css"); /* Lägg till här ELLER före index.css i html-filen */
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background:var(--color-primary);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--color-primary), var(--color-secondary));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.plan {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    flex: 1; /* Gör varje item till lika stora*/ 
+
+    /* flex: 1 motsvarar dess tre - är en shorthand */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%; */
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; default */
+
+}
+
+/* samma som */
+/* .plan1 {
+    flex: 1;
+}
+.plan2 {
+    flex: 2;
+}
+.plan3 {
+    flex: 1;
+} */
+
+
+
+.plan h2 {
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+ul.features {
+    list-style: none;
+}
+
+ul.features li {
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    padding: 10px;
+}
+
+ul.features li:last-child {
+    border-bottom: 0;
+}
+
+.price {
+    font-size: 36px;
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+.plan .cta {
+    text-decoration: none;
+    background-color: var(--color-accent);
+    color: var(--text-color);
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 400;
+}
